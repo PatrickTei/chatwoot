@@ -3,7 +3,8 @@ require 'rails_helper'
 RSpec.describe 'Api::V1::Accounts::MacrosController', type: :request do
   let(:account) { create(:account) }
   let(:administrator) { create(:user, account: account, role: :administrator) }
-  before :each do
+
+  before do
     create(:macro, account: account, created_by: administrator, updated_by: administrator)
     create(:macro, account: account, created_by: administrator, updated_by: administrator)
   end
@@ -16,8 +17,8 @@ RSpec.describe 'Api::V1::Accounts::MacrosController', type: :request do
 
         expect(response).to have_http_status(:success)
         body = JSON.parse(response.body)
-        binding.pry
-        expect(body[:payload].first[:id]).to eq(macro.id)
+        expect(body['payload'].first['id']).to eq(Macro.first.id)
+        expect(body['payload'].last['id']).to eq(Macro.last.id)
       end
     end
 
@@ -55,8 +56,21 @@ RSpec.describe 'Api::V1::Accounts::MacrosController', type: :request do
             {
               'action_name': :resolved
             }
-          ]
+          ],
+          visibility: :account,
+          created_by_id: administrator.id
         }
+      end
+
+      it 'creates the macro' do
+        post "/api/v1/accounts/#{account.id}/macros",
+             params: params,
+             headers: administrator.create_new_auth_token
+
+        expect(response).to have_http_status(:success)
+        json_response = JSON.parse(response.body)
+        expect(json_response['name']).to eql(params['name'])
+        expect(json_response['payload']['created_by']['id']).to eql(administrator.id)
       end
     end
   end
