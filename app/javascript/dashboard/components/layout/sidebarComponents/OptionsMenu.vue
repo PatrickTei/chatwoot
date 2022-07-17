@@ -61,17 +61,6 @@
             </a>
           </router-link>
         </woot-dropdown-item>
-        <woot-dropdown-item>
-          <woot-button
-            variant="clear"
-            color-scheme="secondary"
-            size="small"
-            icon="power"
-            @click="logout"
-          >
-            {{ $t('SIDEBAR_ITEMS.LOGOUT') }}
-          </woot-button>
-        </woot-dropdown-item>
       </woot-dropdown-menu>
     </div>
   </transition>
