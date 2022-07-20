@@ -109,7 +109,7 @@ export default {
   z-index: 100;
 
   .active a {
-    background: var(--w-500);
+    background: #e61e63;
   }
 }
 </style>

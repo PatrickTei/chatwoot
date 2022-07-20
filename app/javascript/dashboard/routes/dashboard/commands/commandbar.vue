@@ -62,7 +62,7 @@ export default {
 
 <style>
 ninja-keys {
-  --ninja-accent-color: var(--w-500);
+  --ninja-accent-color: #e61e63;
   --ninja-font-family: 'Inter';
   z-index: 9999;
 }

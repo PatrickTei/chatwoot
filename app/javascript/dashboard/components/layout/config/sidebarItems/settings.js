@@ -40,41 +40,11 @@ const settings = accountId => ({
       toStateName: 'agent_list',
     },
     {
-      icon: 'people-team',
-      label: 'TEAMS',
-      hasSubMenu: false,
-      toState: frontendURL(`accounts/${accountId}/settings/teams/list`),
-      toStateName: 'settings_teams_list',
-    },
-    {
       icon: 'mail-inbox-all',
       label: 'INBOXES',
       hasSubMenu: false,
       toState: frontendURL(`accounts/${accountId}/settings/inboxes/list`),
       toStateName: 'settings_inbox_list',
-    },
-    {
-      icon: 'tag',
-      label: 'LABELS',
-      hasSubMenu: false,
-      toState: frontendURL(`accounts/${accountId}/settings/labels/list`),
-      toStateName: 'labels_list',
-    },
-    {
-      icon: 'code',
-      label: 'CUSTOM_ATTRIBUTES',
-      hasSubMenu: false,
-      toState: frontendURL(
-        `accounts/${accountId}/settings/custom-attributes/list`
-      ),
-      toStateName: 'attributes_list',
-    },
-    {
-      icon: 'automation',
-      label: 'AUTOMATION',
-      hasSubMenu: false,
-      toState: frontendURL(`accounts/${accountId}/settings/automation/list`),
-      toStateName: 'automation_list',
     },
     {
       icon: 'chat-multiple',
@@ -84,27 +54,6 @@ const settings = accountId => ({
         `accounts/${accountId}/settings/canned-response/list`
       ),
       toStateName: 'canned_list',
-    },
-    {
-      icon: 'flash-on',
-      label: 'INTEGRATIONS',
-      hasSubMenu: false,
-      toState: frontendURL(`accounts/${accountId}/settings/integrations`),
-      toStateName: 'settings_integrations',
-    },
-    {
-      icon: 'star-emphasis',
-      label: 'APPLICATIONS',
-      hasSubMenu: false,
-      toState: frontendURL(`accounts/${accountId}/settings/applications`),
-      toStateName: 'settings_applications',
-    },
-    {
-      icon: 'settings',
-      label: 'ACCOUNT_SETTINGS',
-      hasSubMenu: false,
-      toState: frontendURL(`accounts/${accountId}/settings/general`),
-      toStateName: 'general_settings_index',
     },
   ],
 });

@@ -1,10 +1,5 @@
 <template>
   <div class="primary--sidebar">
-    <logo
-      :source="logoSource"
-      :name="installationName"
-      :account-id="accountId"
-    />
     <nav class="menu vertical">
       <primary-nav-item
         v-for="menuItem in menuItems"
@@ -29,7 +24,6 @@
   </div>
 </template>
 <script>
-import Logo from './Logo';
 import PrimaryNavItem from './PrimaryNavItem';
 import OptionsMenu from './OptionsMenu';
 import AgentDetails from './AgentDetails';
@@ -39,7 +33,6 @@ import { frontendURL } from 'dashboard/helper/URLHelper';
 
 export default {
   components: {
-    Logo,
     PrimaryNavItem,
     OptionsMenu,
     AgentDetails,

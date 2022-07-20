@@ -113,7 +113,7 @@ $label-badge-size: var(--space-slab);
 
   &.is-active {
     background: var(--w-25);
-    color: var(--w-500);
+    color: #e61e63;
     border-color: var(--w-25);
   }
 }

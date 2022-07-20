@@ -145,7 +145,7 @@ export default {
 }
 
 .onboarding--link {
-  color: var(--w-500);
+  color: #e61e63;
   font-weight: var(--font-weight-medium);
   text-decoration: underline;
 }

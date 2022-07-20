@@ -57,12 +57,12 @@ export default {
   }
 
   &:focus {
-    border-color: var(--w-500);
+    border-color: #e61e63;
   }
 
   &.is-active {
     background: var(--w-50);
-    color: var(--w-500);
+    color: #e61e63;
   }
 }
 

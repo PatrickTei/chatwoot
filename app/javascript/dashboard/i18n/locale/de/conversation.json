@@ -136,7 +136,7 @@
     }
   },
   "ONBOARDING": {
-    "TITLE": "Hallo 👋, Willkommen bei %{installationName}!",
+    "TITLE": "Hallo 👋, Willkommen beim digitalen Posteingang!",
     "DESCRIPTION": "Danke für's Registrieren. Wir möchten, dass Sie %{installationName} optimal nutzen. Hier sind ein paar Dinge, die Sie in %{installationName} tun können, um das Erlebnis angenehm zu gestalten.",
     "READ_LATEST_UPDATES": "Lesen Sie unsere neuesten Updates",
     "ALL_CONVERSATION": {

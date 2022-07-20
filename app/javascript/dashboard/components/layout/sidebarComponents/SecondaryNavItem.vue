@@ -199,7 +199,7 @@ export default {
   &.router-link-exact-active,
   &.is-active {
     background: var(--w-25);
-    color: var(--w-500);
+    color: #e61e63;
     border-color: var(--w-25);
   }
 }
@@ -239,7 +239,7 @@ export default {
   color: var(--s-500);
 
   &:hover {
-    color: var(--w-500);
+    color: #e61e63;
   }
 }
 .beta {

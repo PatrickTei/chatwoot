@@ -148,7 +148,7 @@ export default {
   background-color: var(--color-background);
 
   &:focus {
-    border: 1px solid var(--w-500);
+    border: 1px solid #e61e63;
   }
 }
 

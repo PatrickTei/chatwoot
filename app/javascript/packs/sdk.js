@@ -27,7 +27,7 @@ const runSDK = ({ baseUrl, websiteToken }) => {
     websiteToken,
     locale: chatwootSettings.locale,
     type: getBubbleView(chatwootSettings.type),
-    launcherTitle: chatwootSettings.launcherTitle || '',
+    launcherTitle: 'Digitaler Posteingang | apoways',
     showPopoutButton: chatwootSettings.showPopoutButton || false,
     widgetStyle: getWidgetStyle(chatwootSettings.widgetStyle) || 'standard',
     resetTriggered: false,

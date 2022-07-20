@@ -152,7 +152,7 @@ export default {
 
   &:hover {
     .search--icon {
-      color: var(--w-500);
+      color: #e61e63;
     }
   }
 }

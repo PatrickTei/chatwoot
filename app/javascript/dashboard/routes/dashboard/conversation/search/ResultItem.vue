@@ -142,7 +142,7 @@ export default {
 .icon--conversation-search-item {
   align-items: center;
   display: flex;
-  color: var(--w-500);
+  color: #e61e63;
 }
 
 .conversation {

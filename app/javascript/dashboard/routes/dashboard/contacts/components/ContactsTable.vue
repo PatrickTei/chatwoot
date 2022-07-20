@@ -329,6 +329,9 @@ export default {
   .ve-table-sort {
     top: -4px;
   }
+  .ve-table-sort .active {
+    color: #e61e63 !important;
+  }
 }
 
 .contacts--loader {
